@@ -12,7 +12,7 @@ You can install Audio.TUI with a single command:
 
 ```bash
 # Clone and install
-git clone https://github.com/yourusername/audio.tui.git
+git clone https://github.com/Aditya-Giri-4356/audio.tui.git
 cd audio.tui
 chmod +x install.sh
 ./install.sh
@@ -30,7 +30,7 @@ aud
 
 ```powershell
 # Clone (requires Git)
-git clone https://github.com/yourusername/audio.tui.git
+git clone https://github.com/Aditya-Giri-4356/audio.tui.git
 cd audio.tui
 .\install.ps1
 ```
