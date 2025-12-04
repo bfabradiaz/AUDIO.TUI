@@ -37,7 +37,7 @@ We provide easy-to-use installation scripts for all major platforms.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/audio.tui.git
+git clone https://github.com/Aditya-Giri-4356/audio.tui.git
 cd audio.tui
 
 # Run the installer
@@ -51,7 +51,7 @@ aud
 
 ```powershell
 # Clone the repository
-git clone https://github.com/yourusername/audio.tui.git
+git clone https://github.com/Aditya-Giri-4356/audio.tui.git
 cd audio.tui
 
 # Run the installer
