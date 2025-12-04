@@ -1,0 +1,312 @@
+/* Audio.TUI Stylesheet */
+
+/* Main layout */
+Screen {
+    background: #1a1a1a;
+    layout: vertical;
+}
+
+/* Header */
+Header {
+    background: #2d2d2d;
+    color: #ffffff;
+    height: auto;
+    min-height: 3;
+    max-height: 8;
+    padding: 0 1;
+}
+
+#header-container {
+    width: 100%;
+    height: auto;
+}
+
+#title {
+    text-align: center;
+    color: #00ff00;
+    margin: 0 0 1 0;
+}
+
+#status {
+    text-align: right;
+    color: #ffff00;
+}
+
+#instructions {
+    text-align: center;
+    color: #00ffff;
+    margin: 0;
+}
+
+/* Main content layout */
+#main-content {
+    height: 1fr;
+    width: 100%;
+}
+
+/* Sidebar with playlist */
+#sidebar {
+    width: 30%;
+    background: #242424;
+    border: solid #444444;
+    padding: 1;
+    height: 100%;
+}
+
+Playlist {
+    height: 100%;
+}
+
+ListView {
+    background: #1a1a1a;
+    border: solid #333333;
+    height: 100%;
+}
+
+ListItem {
+    background: #2d2d2d;
+    color: #ffffff;
+    padding: 0 1;
+    margin: 0 0 1 0;
+    height: 1;
+}
+
+ListItem:hover {
+    background: #3d3d3d;
+}
+
+ListItem.-selected {
+    background: #00ff00;
+    color: #000000;
+}
+
+ListItem.current {
+    color: #00ffff;
+    text-style: bold;
+}
+
+/* Content area with visualizer and equalizer */
+#content {
+    width: 70%;
+    background: #242424;
+    padding: 1;
+    height: 100%;
+}
+
+/* Visualizer */
+Visualizer {
+    height: 1fr;
+    min-height: 5;
+    background: #1a1a1a;
+    border: solid #333333;
+    margin: 0 0 1 0;
+    padding: 1;
+}
+
+#visualizer-title {
+    text-align: center;
+    color: #00ffff;
+    margin: 0 0 1 0;
+}
+
+#visualizer-bars {
+    text-align: center;
+    color: #00ff00;
+    height: 1fr;
+    content-align: center bottom;
+}
+
+/* Equalizer */
+Equalizer {
+    height: 1fr;
+    min-height: 5;
+    background: #1a1a1a;
+    border: solid #333333;
+    padding: 0 1;
+}
+
+.eq-title {
+    text-align: center;
+    color: #ff00ff;
+    margin: 0;
+}
+
+#bands-display {
+    text-align: center;
+    color: #00ff00;
+    margin: 0;
+}
+
+#band-controls {
+    height: auto;
+    align: center middle;
+    margin: 1 0 0 0;
+}
+
+.band-control {
+    width: auto;
+    height: auto;
+    margin: 0 1;
+    align: center middle;
+}
+
+.band-label {
+    color: #ffffff;
+    text-align: center;
+}
+
+.band-btn {
+    width: auto;
+    min-width: 3;
+    height: 1;
+    background: #444444;
+    color: #ffffff;
+    border: solid #666666;
+    margin: 0 1;
+}
+
+.band-btn:hover {
+    background: #666666;
+}
+
+/* Player controls */
+PlayerControls {
+    width: 100%;
+    height: auto;
+    background: #2d2d2d;
+    padding: 0 1;
+}
+
+.controls {
+    width: 100%;
+    height: auto;
+    align: center middle;
+}
+
+.control-group {
+    width: auto;
+    height: auto;
+    align: center middle;
+    margin: 0;
+}
+
+.control-btn {
+    width: 3;
+    height: 1;
+    background: #444444;
+    color: #ffffff;
+    border: solid #666666;
+    margin: 0;
+}
+
+.control-btn:hover {
+    background: #666666;
+}
+
+.control-btn.-active {
+    background: #00ff00;
+    color: #000000;
+}
+
+.control-label {
+    text-align: center;
+    color: #888888;
+    height: auto;
+    margin: 0;
+}
+
+.help-section {
+    width: 100%;
+    text-align: center;
+    color: #ffff00;
+    background: #1a1a1a;
+    padding: 0;
+    margin: 0;
+}
+
+/* Status bar */
+StatusBar {
+    height: 3;
+    background: #2d2d2d;
+    color: #ffffff;
+    padding: 0 1;
+    align: center middle;
+}
+
+.progress-bar {
+    width: 1fr;
+    height: 1;
+    margin: 0 1;
+    background: #444444;
+}
+
+.progress-bar>.bar--bar {
+    color: #00ff00;
+    background: #005500;
+}
+
+.progress-bar>.bar--complete {
+    color: #00ff00;
+}
+
+.time-display {
+    width: auto;
+    min-width: 6;
+    content-align: center middle;
+    color: #00ff00;
+}
+
+.volume-display {
+    width: 12;
+    content-align: center middle;
+    color: #ffff00;
+}
+
+.volume-control {
+    color: #ffff00;
+}
+
+/* File Browser Modal */
+FileBrowser {
+    align: center middle;
+}
+
+#file-browser-container {
+    width: 80%;
+    height: 80%;
+    background: #2d2d2d;
+    border: thick #00ff00;
+    padding: 1;
+}
+
+#browser-title {
+    text-align: center;
+    color: #00ffff;
+    background: #1a1a1a;
+    padding: 1;
+    margin: 0 0 1 0;
+}
+
+#file-tree {
+    height: 1fr;
+    background: #1a1a1a;
+    border: solid #444444;
+    margin: 0 0 1 0;
+}
+
+#browser-buttons {
+    height: auto;
+    align: center middle;
+    margin: 0 0 1 0;
+}
+
+#browser-buttons Button {
+    margin: 0 1;
+}
+
+#selection-count {
+    text-align: center;
+    color: #ffff00;
+    background: #1a1a1a;
+    padding: 0 1;
+}

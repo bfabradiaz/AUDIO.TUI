@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: audio-tui
+Version: 0.1.0
+Summary: A terminal-based audio player with visualization
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Audio.TUI
+
+A cross-platform terminal music player with a beautiful TUI interface.
+
+## Features
+
+- 🎵 Play various audio formats (mp3, wav, flac, m4a, ogg)
+- 🎨 Real-time audio visualizer
+- 🎛️ Built-in equalizer with multiple presets
+- 🖱️ Full mouse support
+- ⌨️ Keyboard shortcuts for quick control
+- 🌈 Beautiful rainbow ASCII art header
+
+## Installation
+
+1. Clone this repository
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+```bash
+python -m audio.tui.app
+```
+
+## Controls
+
+- `SPACE`: Play/Pause
+- `←` `→`: Seek backward/forward
+- `↑` `↓`: Volume up/down
+- `M`: Toggle directory browser
+- `E`: Cycle through EQ modes
+- `Q`: Quit
